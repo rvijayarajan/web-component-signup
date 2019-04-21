@@ -26,6 +26,10 @@ app.get('/scripts/ui-bootstrap.js', function(req, res){
   res.sendFile(path.join(__dirname + '/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js'));
 });
 
+app.get('/app.js', function(req, res){
+  res.sendFile(path.join(__dirname + '/app.js'));
+});
+
 app.get('/index.js', function(req, res){
   res.sendFile(path.join(__dirname + '/index.js'));
 });
