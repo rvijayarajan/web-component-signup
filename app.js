@@ -3,11 +3,13 @@
  	var app = angular.module("main",['wcSignup']);
 
 	app.component("app", {
-		template: '<div class="row"> '+
-						'<div class="col-sm-4"> '+
+		template: '<div class="container">'+
+					'<div class="row"> '+
+						'<div class="offset-sm-4"> '+
 							'<signup></signup>'+
 						'</div>'+
-					'</div>',
+					'</div>'+
+				  '</div>',
 		controllerAs: "cntl",
 		bindings: {
 			
