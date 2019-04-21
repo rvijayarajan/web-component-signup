@@ -5,7 +5,7 @@
 	app.component("app", {
 		template: '<div class="container">'+
 					'<div class="row"> '+
-						'<div class="offset-sm-4"> '+
+						'<div class="col-12 col-md-4 offset-sm-4"> '+
 							'<signup></signup>'+
 						'</div>'+
 					'</div>'+
