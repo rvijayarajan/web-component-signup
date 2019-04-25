@@ -4,9 +4,8 @@
 
 	app.component("signup", {
 		templateUrl: "signup.html",
-		controllerAs: "cntl",
 		bindings: {
-
+			onSubmit: '&'
 		},
 		controller: "SignupController"
 	});
@@ -16,6 +15,17 @@
 	SignupControllerFn.$inject = ["$scope"];
 
 	function SignupControllerFn($scope) {
+		
+		var vm = $scope.$ctrl;
+
+		vm.submit = function() {
+			vm.onSubmit({
+				name: vm.name,
+				email: vm.email,
+				password: vm.password,
+				agreed: vm.agreed
+			});
+		};
 	}
 
 })();

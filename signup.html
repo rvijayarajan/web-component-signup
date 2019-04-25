@@ -7,7 +7,7 @@
 			  <div class="input-group-prepend">
 			    <i class="ion-md-person input-group-text"></i>
 			  </div>
-			  <input type="text" class="form-control" id="userName" placeholder="Name">
+			  <input type="text" class="form-control" id="userName" placeholder="Name" ng-model="$ctrl.name">
 			</div>
     	</div>
     	<div class="form-group row">
@@ -16,7 +16,7 @@
 			  <div class="input-group-prepend">
 			    <i class="ion-md-mail input-group-text"></i>
 			  </div>
-			  <input type="email" class="form-control" id="userEmail" placeholder="Email">
+			  <input type="email" class="form-control" id="userEmail" placeholder="Email" ng-model="$ctrl.email">
 			</div>
     	</div>
     	<div class="form-group row">
@@ -25,16 +25,16 @@
 			  <div class="input-group-prepend">
 			    <i class="ion-md-lock input-group-text"></i>
 			  </div>
-			  <input type="password" class="form-control" id="userPassword" placeholder="Password">
+			  <input type="password" class="form-control" id="userPassword" placeholder="Password" ng-model="$ctrl.password">
 			</div>
     	</div>
     	<div class="form-group row justify-content-md-center justify-content-start">
 		    <div class="col-4">
-		      <button type="submit" class="btn btn-primary">Sign Up</button>
+		      <button type="submit" class="btn btn-primary" ng-click="$ctrl.submit()">Sign Up</button>
 		    </div>
 		    <div class="w-100"></div>
 		    <div class="col-12 col-md-9 custom-control custom-checkbox text-center">
-			  <input type="checkbox" class="custom-control-input" id="terms">
+			  <input type="checkbox" class="custom-control-input" id="terms" ng-model="$ctrl.agreed">
 			  <label class="custom-control-label" for="terms">I agree to the terms and conditions.</label>
 			</div>
 		  </div>

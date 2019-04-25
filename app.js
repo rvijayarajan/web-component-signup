@@ -6,7 +6,7 @@
 		template: '<div class="container">'+
 					'<div class="row"> '+
 						'<div class="col-12 col-md-4 offset-sm-4"> '+
-							'<signup></signup>'+
+							'<signup on-submit="onSubmit(name,email,password,agreed)"></signup>'+
 						'</div>'+
 					'</div>'+
 				  '</div>',
@@ -23,7 +23,8 @@
 
 	function AppControllerFn($scope) {
 		
-		
+		$scope.onSubmit = function(name,email,password,agreed) {
+		}
 	}
 
 })();
